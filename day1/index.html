@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="iconFount/iconfont.css">
+    <script>
+        document.documentElement.style.fontSize = window.innerWidth / 750 * 100 + 'px';
+    </script>
+</head>
+
+<body>
+    <div class="wrap" style="height: 800px">
+        <div class="ban swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="images/swiper (1).jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/swiper (2).jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/swiper (3).jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/swiper (4).jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/swiper (5).png" alt="">
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="top">
+                <div class="more">
+                    <i class="icon iconfont icon-category"></i>
+                </div>
+                <div class="search">
+                    <i class="icon iconfont icon-search"></i>
+                    <input type="text" placeholder="钓鱼竿">
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <dl>
+                <dt><img src="images/lei (2).gif" alt=""></dt>
+                <dd>领优惠券</dd>
+            </dl>
+            <dl>
+                <dt><img src="images/lei (3).gif" alt=""></dt>
+                <dd>9.9元拼</dd>
+            </dl>
+            <dl>
+                <dt><img src="images/lei (4).gif" alt=""></dt>
+                <dd>找折扣</dd>
+            </dl>
+            <dl>
+                <dt><img src="images/lei (5).gif" alt=""></dt>
+                <dd>唯品会</dd>
+            </dl>
+            <dl>
+                <dt><img src="images/lei (6).gif" alt=""></dt>
+                <dd>挑礼物</dd>
+            </dl>
+            <dl>
+                <dt><img src="images/lei (7).gif" alt=""></dt>
+                <dd>领京豆</dd>
+            </dl>
+            <dl>
+                <dt><img src="images/lei (8).gif" alt=""></dt>
+                <dd>京东服饰</dd>
+            </dl>
+            <dl>
+                <dt><img src="images/lei (9).gif" alt=""></dt>
+                <dd>京东超市</dd>
+            </dl>
+            <dl>
+                <dt><img src="images/lei (10).gif" alt=""></dt>
+                <dd>京东手机</dd>
+            </dl>
+            <dl>
+                <dt><img src="images/lei (1).gif" alt=""></dt>
+                <dd>全部分类</dd>
+            </dl>
+        </div>
+        <div class="banner">
+            <img src="images/banner.gif" alt="">
+        </div>
+        <div class="main">
+            <div class="left">
+                <img src="images/mine.gif" alt="">
+                <img src="images/jiantou.gif" alt="">
+            </div>
+            <div class="mid">
+                <div class="mid_l">
+                    <div class="mid_l_top">
+                        <img src="images/logo_s.gif" alt="">
+                        <p>京东天气管家</p>
+                    </div>
+                    <div class="mid_l_bot">
+                        您所在的城市太干燥啦，献上保湿福利 戳这里
+                        <i class="icon iconfont icon-more"></i>
+                    </div>
+                </div>
+                <div class="pic">
+                    <img src="images/logo_b.gif" alt="">
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <footer class="footer">
+        <dl class="active">
+            <dt><i class="icon iconfont icon-all"></i></dt>
+            <dd>首页</dd>
+        </dl>
+        <dl>
+            <dt><i class="icon iconfont icon-favorite"></i></dt>
+            <dd>精选</dd>
+        </dl>
+        <dl>
+            <dt><i class="icon iconfont icon-logistic"></i></dt>
+            <dd>购物圈</dd>
+        </dl>
+        <dl>
+            <dt><i class="icon iconfont icon-cart"></i></dt>
+            <dd>购物车</dd>
+        </dl>
+        <dl>
+            <dt><i class="icon iconfont icon-bussinessman"></i></dt>
+            <dd>个人</dd>
+        </dl>
+    </footer>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script>
+        new Swiper('.ban', {
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+            },
+            autoplay: {
+                delay: 3000,
+                stopOnLastSlide: false,
+                disableOnInteraction: true,
+            }
+        })
+        $('.footer').on('click', 'dl', function() {
+            $(this).addClass('active').siblings().removeClass('active');
+        })
+    </script>
+</body>
+
+</html>
